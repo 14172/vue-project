@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <h1>前端練習課程</h1>
+    <h1>代辦清單</h1>
 
     <div class="input-area">
       <input v-model="newTodo" placeholder="輸入代辦事項" />
