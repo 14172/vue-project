@@ -1,0 +1,489 @@
+/* 引入字體 */
+@import url("https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Noto+Sans+TC:wght@100..900&family=Playwrite+DK+Loopet:wght@100..400&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 標籤基本樣式 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: var(--neutral-900);
+}
+a {
+  color: var(--neutral-900);
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-link :hover {
+  color: var(--primary-400);
+}
+/* 導覽列內容 */
+main {
+  padding-top: 80px; 
+}
+.navbar-wrapper {
+  backdrop-filter: blur(8px); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* 白色，80% 不透明 */
+  z-index: 1000;
+}
+.bi-person:hover {
+    color: var(--neutral-500);
+}
+/* 顏色通用樣式 */
+:root {
+  --primary-100: #f5fee7;
+  --primary-200: #e8fec5;
+  --primary-300: #c0fa73;
+  --primary-400: #57a203;
+  --primary-500: #477a11;
+  --neutral-0: #ffffff;
+  --neutral-100: #f8f9fa;
+  --neutral-200: #e0ecef;
+  --neutral-300: #dee2e6;
+  --neutral-400: #ced4da;
+  --neutral-500: #adb5ba;
+  --neutral-600: #6c757d;
+  --neutral-700: #495057;
+  --neutral-800: #343a40;
+  --neutral-900: #212529;
+  --danger-300: #d74f4f;
+}
+/* 欄位設定 */
+.col {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12);
+}
+.col-2 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 2);
+}
+.col-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 3);
+}
+.col-4 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 4);
+}
+.col-5 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 5);
+}
+.col-6 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 6);
+}
+.col-7 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 7);
+}
+.col-8 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 8);
+}
+.col-9 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 9);
+}
+.col-10 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 10);
+}
+.col-11 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 11);
+}
+.col-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 12);
+}
+.d-flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.footer {
+  text-align: center;
+}
+.footer-links li {
+  cursor: pointer;
+}
+
+/* 通用樣式 */
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+.h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.h3 {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.h4 {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.h5 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.h6 {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.text-primary-400 {
+  color: var(--neutral-400);
+}
+.text-danger {
+  color: var(--danger-300);
+}
+.bg-primary-200 {
+  background-color: var(--primary-200);
+}
+.bg-neutral-100 {
+  background-color: var(--neutral-100);
+}
+.p-12 {
+  padding: 12px;
+}
+.py-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.py-32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.py-64 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.me-8 {
+  margin-right: 8px;
+}
+.me-40 {
+  margin-right: 40px;
+}
+.me-48 {
+  margin-right: 48px;
+}
+.me-24 {
+  margin-right: 24px;
+}
+.me-12 {
+  margin-right: 12px;
+}
+.mb-4 {
+  margin-bottom: 4px;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+.mb-48 {
+  margin-bottom: 48px;
+}
+.pb-48 {
+  padding-bottom: 48px;
+}
+.mt-32 {
+  margin-top: 32px;
+}
+
+/* 元件 */
+.breadcrum-item + .breadcrum-item::before {
+  content: "/";
+  padding: 0 12px;
+  color: var(--neutral-300);
+  font-weight: 700;
+}
+.breadcrum-item {
+  display: flex;
+  font-weight: 500;
+}
+.breadcrum-link {
+  color: var(--neutral-600);
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-dark {
+  background-color: var(--neutral-900);
+  color: var(--neutral-0);
+}
+.btn-dark:hover {
+  font-weight: 700;
+  color: var(--neutral-0);
+  background-color: var(--primary-400);
+}
+
+.page-item :hover {
+  background-color: var(--primary-300);
+}
+.gap-8 {
+  gap: 8px;
+}
+.btn-light {
+  border: 1px solid var(--neutral-900);
+}
+.btn-light:hover {
+  font-weight: 700;
+  background-color: var(--neutral-100);
+  color: var(--neutral-900);
+}
+.btn-light:hover .bi-heart-fill {
+  color: var(--danger-300);
+}
+
+/* 導覽列 */
+.header h1,
+.footer h1 {
+  float: left;
+}
+.header h1 a,
+.footer h1 a {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/e1ad10bd2260f80c5f65be5bfc5042790a261115/2025-week1/logo.svg");
+  width: 129px;
+  height: 46px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+/* 頁尾 */
+.footer {
+  background-color: var(--neutral-100);
+}
+.copyright {
+  text-align: center;
+  padding-top: 32px;
+  border-top: 1px slid var(--neutral-300);
+}
+
+.copyright p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--neutral-600);
+  line-height: 1.5;
+}
