@@ -1,3 +1,3 @@
 ## 團隊成員
--Ryckie
+- Ryckie
 - Lucy
